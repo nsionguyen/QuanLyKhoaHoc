@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ntn.quanlykhoahoc.controllers.BaiTapController">
+   <children>
+      <Text fx:id="txtContent" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="558.9367065429688" />
+      <VBox fx:id="radioButtonsContainer" alignment="CENTER_LEFT" spacing="10">
+        <!-- Các RadioButton sẽ được thêm động vào container này từ controller -->
+    </VBox>
+    <HBox alignment="CENTER" spacing="20">
+        <!-- Quay lại và tiếp theo -->
+        <Button fx:id="prevButton" onAction="#prevHandler" text="Quay lại" />
+        <Button fx:id="nextButton" onAction="#nextHandler" text="Tiếp theo" />
+      
+<!--         Nộp bài -->
+        <Button fx:id="submitButton" onAction="#submit" text="Nộp bài" />
+        
+        
+    </HBox>
+      <Text fx:id="timerText" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="dem" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+
+   </children>
+</VBox>
